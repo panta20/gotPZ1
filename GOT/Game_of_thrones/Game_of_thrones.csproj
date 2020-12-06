@@ -55,6 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Prozori\DodavanjeProzor.xaml.cs">
+      <DependentUpon>DodavanjeProzor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Prozori\IzmenaProzor.xaml.cs">
+      <DependentUpon>IzmenaProzor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Prozori\PregledProzor.xaml.cs">
+      <DependentUpon>PregledProzor.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,8 +76,21 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Prozori\DodavanjeProzor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Prozori\IzmenaProzor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Prozori\PregledProzor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Lik.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -95,13 +117,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="got.jpg" />
+    <Resource Include="Slike\got.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="got2.jpg" />
+    <Resource Include="Slike\got2.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="got3.jpg" />
+    <Resource Include="Slike\got3.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
